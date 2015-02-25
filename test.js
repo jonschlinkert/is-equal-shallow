@@ -1,8 +1,8 @@
 /*!
- * equals-shallow <https://github.com/jonschlinkert/equals-shallow>
+ * is-equal-shallow <https://github.com/jonschlinkert/is-equal-shallow>
  *
- * Copyright (c) 2015 Jon Schlinkert.
- * Licensed under the MIT license.
+ * Copyright (c) 2015, Jon Schlinkert.
+ * Licensed under the MIT License.
  */
 
 'use strict';
