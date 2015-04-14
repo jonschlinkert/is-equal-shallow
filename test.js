@@ -29,4 +29,9 @@ describe('equals', function () {
     equals({ b: {}}, { b: {}}).should.be.false;
     equals({ b: []}, { b: []}).should.be.false;
   });
+
+  it('should return false when a value is present in one object but not the other', function () {
+    equals({a: true, b: true, c: true}, {a: true, b: true}).should.be.false;
+    equals({a: true, b: true}, {a: true, b: true, c: true}).should.be.false;
+  });
 });
