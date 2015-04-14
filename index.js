@@ -13,10 +13,15 @@ module.exports = function isEqual(a, b) {
   if (!a && !b) { return true; }
   if (!a && b || a && !b) { return false; }
 
-  for (var key in b) {
+  var numKeysA = 0, numKeysB = 0, key;
+  for (key in b) {
+    numKeysB++;
     if (!isPrimitive(b[key]) || !a.hasOwnProperty(key) || (a[key] !== b[key])) {
       return false;
     }
   }
-  return true;
+  for (key in a) {
+    numKeysA++;
+  }
+  return numKeysA === numKeysB;
 };
