@@ -29,7 +29,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "is-primitive": "^1.0.0"
+    "is-primitive": "^2.0.0"
   },
   "devDependencies": {
     "mocha": "*",
