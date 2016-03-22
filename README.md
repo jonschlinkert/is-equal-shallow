@@ -17,7 +17,11 @@ $ npm i is-equal-shallow --save
 ## Usage
 
 ```js
+// legacy cjs require
 var equals = require('is-equal-shallow');
+// use es6 import
+import equals from 'is-equal-shallow';
+
 equals(object_a, object_b);
 ```
 
